@@ -1,0 +1,199 @@
+:root {
+  --color-background: #000f1f;
+  --color-font: #ccffff;
+  --color-btn: #005f8f;
+  --color-tasks: #265973;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-font);
+  scrollbar-width: 0rem;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: var(--color-tasks);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  position: sticky;
+  top: 0;
+}
+
+.navbar h2 {
+  font-size: 2.3rem;
+  margin-left: 10rem;
+}
+
+.navbar p {
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 6.5rem auto;
+  min-width: 65vw;
+}
+
+.container-2 {
+  width: 65%;
+}
+
+.main-heading {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.main-text {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.task-adder {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.task-input {
+  width: 85%;
+  height: 4rem;
+  border: 1px solid var(--color-btn);
+  background-color: transparent;
+  padding: 1rem;
+  color: var(--color-font);
+  font-size: 1.4rem;
+  font-family: inherit;
+}
+
+.task-input::placeholder {
+  color: inherit;
+  font-family: inherit;
+  word-spacing: 1rem;
+  letter-spacing: 1px;
+}
+
+.task-input:focus {
+  outline: 3px solid #eee;
+  outline-offset: 3px;
+}
+
+.add-btn {
+  width: 15%;
+  background-color: var(--color-btn);
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.save-btn {
+  width: 15%;
+  background-color: var(--color-btn);
+  border: none;
+  outline: none;
+  color: inherit;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.task-list {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.3rem;
+}
+
+.task {
+  background-color: var(--color-tasks);
+  display: grid;
+  grid-template-columns: max-content 1fr max-content max-content;
+  align-items: center;
+  gap: 1.3rem;
+  padding: 1.5rem 1rem;
+  text-align: left;
+}
+
+.task-checkbox:hover {
+  cursor: pointer;
+}
+
+.task-text {
+  flex: 1;
+  font-size: 1.6rem;
+  justify-self: start;
+  letter-spacing: 1px;
+}
+
+.edit-btn,
+.delete-btn {
+  color: var(--color-font);
+  background-color: transparent;
+  font-size: 2.4rem;
+  outline: none;
+  border: none;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+  color: var(--color-background);
+}
+
+.finish-btns{
+  margin-left:auto;
+  margin-right: 4rem;
+}
+
+.showFinished,
+.hideFinished {
+  all: unset;
+  background-color: var(--color-background);
+  margin-left:1rem;
+  padding:0.5rem 1rem;
+  font-size: 2.4rem;
+  align-self: center;
+}
+
+.hideFinished{
+  display: none;
+}
+
+.line-through {
+  text-decoration: line-through var(--color-background) 2px;
+}
+
+@media only screen and (max-width:51.25em) {
+  .container-2{
+    width:80%;
+  }
+
+  .navbar h2 {
+    margin-left: 6rem;
+  }
+}
+
+@media only screen and (max-width:27.5em) {
+  .navbar{
+    gap:0.8rem;
+  }
+  .navbar h2 {
+    margin-left: 2rem;
+  }
+
+  .finish-btns{
+    margin-right: 1.5rem;
+  }
+
+  .container-2{
+    width:95%;
+  }
+}
