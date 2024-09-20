@@ -21,7 +21,7 @@ To view or run this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/natours.git
+   git clone https://github.com/hassan4554/Todo-app.git
    ```
 2. **Go to Folder**
    ```bash
