@@ -46,4 +46,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any inquiries, feel free to reach out at **hassanmehmood.here@gmail.com**
 
 
-Thank you for visiting Natours! 🌲 May your next adventure in nature be amazing! ✈️🍃
